@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logo.jpg">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Hesti Book Notes</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+
+      <!--Content before waves-->
+      <div class="inner-header flex">
+        <center>
+        <hr width="500px;" color="white" size="10"><br>
+        <h1>Book Notes</h1><br>
+        <hr width="500px;" color="white" size="10">
+        </center>
+      </div>
+ 
+      <!--Waves Container-->
+      <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+
+      <!--Content starts-->
+      <div class="content flex">
+        <p>Scroll Down to Create Notebook Notes</p></br>
+        <img src= https://icongr.am/feather/arrow-down.svg?size=20&color=128cca/>
+      </div>
+
+      <!-- Navigation Bar -->
+      <div id="pageHr"> 
+        <div class="navbar">
+          <a href="#input">Input Buku</a>
+          <a href="#data">Data Buku</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <aside>
+        <div id="input" class="container">
+          <form action="#" class="form-input" autocomplete="off">
+            <h2>Input Buku Baru</h2>
+
+            <input type="hidden" name="idBook" class="idBook" value="">
+
+            <div class="form-group">
+              <label for="title">Judul</label>
+              <input type="text" name="title" id="title" placeholder="Masukkan Judul Buku" class="form-control title" required>
+            </div>
+
+            <div class="form-group">
+              <label for="author">Penulis</label>
+              <input type="text" name="author" id="author" placeholder="Masukkan Penulis Buku" class="form-control author" required>
+            </div>
+
+            <div class="form-group">
+              <label for="year">Tahun</label>
+              <input type="number" name="yeah" id="yeah" placeholder="Masukkan Tahun Terbit" maxlength="4" class="form-control year" required>
+            </div>
+
+            <div class="form-group checkbox">
+              <label for="isCompleted">Selesai Dibaca ?</label>
+              <input type="checkbox" name="isCompleted" id="isCompleted" class="isCompleted">
+            </div>
+
+            <button class="button-submit">Tambah Data</button>
+          </form>
+      </aside>
+
+        <article>
+          <section id="data" class="books-wrapper">
+            <h2>Data Buku</h2>
+
+            <div class="books-list">
+              <div class="tab-button-wrapper">
+                <a href="#uncompleted" class="tab-buttons uncompleted active">Belum Selesai Dibaca</a>
+                <a href="#completed" class="tab-buttons completed">Selesai Dibaca</a>
+                <a href="#allBook" class="tab-buttons search-books">Cari Buku</a>
+              </div>
+
+              <div class="books-tab-content" id="uncompleted">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Judul</th>
+                      <th>Penulis</th>
+                      <th>Tahun</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+
+                  <tbody class="books-item uncompletedBook"></tbody>
+                </table>
+              </div>
+
+              <div class="books-tab-content" id="completed">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Judul</th>
+                      <th>Penulis</th>
+                      <th>Tahun</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+
+                  <tbody class="books-item completedBook"></tbody>
+                </table>
+              </div>
+
+              <div class="books-tab-content" id="allBook">
+                <input type="text" name="keyword" id="keyword" placeholder="Cari Buku Berdasarkan Judul..." class="form-control keyword" required>
+
+                <table class="all-results-table">
+                  <thead>
+                    <tr>
+                      <th>Judul</th>
+                      <th>Penulis</th>
+                      <th>Tahun</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+
+                  <tbody class="books-item allBook"></tbody>
+                </table>
+              </div>
+          </section>
+        </article>
+
+      <section id="contact">
+        <h1 class="section-header">Contact</h1>
+  
+        <div class="contact-wrapper">
+          <!-- Left contact page --> 
+          <form id="contact-form" class="form-horizontal" role="form">
+
+            <div class="form-group">
+              <div class="col-sm-12"></br>
+                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <div class="col-sm-12"></br>
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+              </div>
+            </div>
+  
+            <br>
+              <textarea class="form-control" rows="10" cols="52" placeholder="MESSAGE" name="message" required></textarea>
+        
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+              </div>
+            </button>
+        
+          </form>
+      
+          <!-- Left contact page --> 
+              <div class="direct-contact-container">
+                <ul class="contact-list">
+                  <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Bandar Lampung, Indonesia</span></i></li>
+                  <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">+62 896-3407-0000</a></span></i></li>
+                  <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hestiyuana9@gmail.com</a></span></i></li>
+                </ul>
+              </div>
+          </div>
+      </section>
+    </main>  
+
+    <!-- Footer -->
+    <footer>
+      <div class="bottom">
+        <p>&copy; Hesti Yuana Mahardika. 2022. Dicoding Academy</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
