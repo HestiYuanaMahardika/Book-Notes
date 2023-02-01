@@ -32,7 +32,6 @@ Untuk lebih jelasnya, terdapat 5 kriteria utama pada Bookshelf Apps yang harus A
         isComplete: false,
       }
  ```
- ```
   
     Catatan:
     Untuk id buku pada tiap buku yang disimpan haruslah unik. Tips dalam menetapkan nilai untuk adalah Anda bisa memanfaatkan nilai timestamp. Untuk mendapatkan nilai timestamp di JavaScript cukup mudah, cukup dengan menuliskan expressions +new Date().
