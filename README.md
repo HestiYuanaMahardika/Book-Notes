@@ -5,7 +5,7 @@ Buatlah aplikasi web yang dapat memasukan data buku ke dalam rak, memindahkan da
 
 Untuk lebih jelasnya, terdapat 5 kriteria utama pada Bookshelf Apps yang harus Anda buat.
 
-1. Kriteria 1: Mampu Menambahkan Data Buku
+<b>1. Kriteria 1: Mampu Menambahkan Data Buku</b>
    Syarat: 
    <ul>
       <li>Bookshelf Apps harus mampu menambahkan data buku baru.</li>
@@ -19,7 +19,7 @@ Untuk lebih jelasnya, terdapat 5 kriteria utama pada Bookshelf Apps yang harus A
         year: number,
         isComplete: boolean,
       }
- ```
+  ```
       Berikut contoh data riilnya:
       
   ```javascript
@@ -30,10 +30,9 @@ Untuk lebih jelasnya, terdapat 5 kriteria utama pada Bookshelf Apps yang harus A
         year: 1997,
         isComplete: false,
       }
- ```
+  ```
     Catatan:
     Untuk id buku pada tiap buku yang disimpan haruslah unik. Tips dalam menetapkan nilai untuk adalah Anda bisa memanfaatkan nilai timestamp. Untuk mendapatkan nilai timestamp di JavaScript cukup mudah, cukup dengan menuliskan expressions +new Date().
-   </br>
 
   <li>
     <b>Kriteria 2: Memiliki Dua Rak Buku</b></br>
