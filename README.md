@@ -11,8 +11,8 @@ Untuk lebih jelasnya, terdapat 5 kriteria utama pada Bookshelf Apps yang harus A
     Syarat: 
     <ul>
       <li>Bookshelf Apps harus mampu menambahkan data buku baru.</li>
-      <li>Data buku yang disimpan merupakan objek JavaScript dengan struktur berikut:</li>
-      ```javascript
+      <li>Data buku yang disimpan merupakan objek JavaScript dengan struktur berikut </li>
+  ```javascript
       {
         id: string | number,
         title: string,
@@ -20,9 +20,9 @@ Untuk lebih jelasnya, terdapat 5 kriteria utama pada Bookshelf Apps yang harus A
         year: number,
         isComplete: boolean,
       }
-      ```
+ ```
       Berikut contoh data riilnya:
-      ```javascript
+  ```javascript
       {
         id: 3657848524,
         title: 'Harry Potter and the Philosopher\'s Stone',
@@ -30,7 +30,7 @@ Untuk lebih jelasnya, terdapat 5 kriteria utama pada Bookshelf Apps yang harus A
         year: 1997,
         isComplete: false,
       }
-      ```
+ ```
     </ul>
     Catatan:
     Untuk id buku pada tiap buku yang disimpan haruslah unik. Tips dalam menetapkan nilai untuk adalah Anda bisa memanfaatkan nilai timestamp. Untuk mendapatkan nilai timestamp di JavaScript cukup mudah, cukup dengan menuliskan expressions +new Date().
