@@ -11,6 +11,7 @@ Untuk lebih jelasnya, terdapat 5 kriteria utama pada Bookshelf Apps yang harus A
       <li>Bookshelf Apps harus mampu menambahkan data buku baru.</li>
       <li>Data buku yang disimpan merupakan objek JavaScript dengan struktur berikut </li>
    </ul></br>
+   
   ```javascript
       {
         id: string | number,
@@ -20,6 +21,7 @@ Untuk lebih jelasnya, terdapat 5 kriteria utama pada Bookshelf Apps yang harus A
         isComplete: boolean,
       }
   ```
+  
       Berikut contoh data riilnya:
   ```javascript
       {
